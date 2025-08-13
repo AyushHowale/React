@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -18,15 +16,16 @@ function App() {
     } else {
       setCount(count - 1);
     }
+    
   };
 
   return (
     <>
-      <h1>Counter {count}</h1>
+      <h1>The count is : Counter{count}</h1>
 
-      <button onClick={add}>increase</button>
+      <button style={{color:"red"}} onClick={add}>increase</button>
       <br />
-      <button onClick={sub}>decrease</button>
+      <button style={{color:"green"}} onClick={sub}>decrease</button>
     </>
   );
 }
